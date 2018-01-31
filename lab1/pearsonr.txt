@@ -1,0 +1,21 @@
+Regular:
+
+M1 -0.1027
+M1_plus -0.715
+M2_10 0.0
+M2_50 0.0
+M2_100 0.0
+
+The correlation is very poor with the LSA vectors because for the words tested,
+the vectors are almost zero vectors -- so rarely do they appear in the co-occurrence
+matrix. To take a small step at fixing this, I do add-one smoothing, which improves
+performance to a surprising extent.
+
+
+Bonus (add-one smoothing):
+
+M1 -0.311
+M1_plus -0.202
+M2_10 -0.128
+M2_50 0.262
+M2_100 0.696
